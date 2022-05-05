@@ -35,5 +35,46 @@ print(determine_middle_n(array, n))
 
 # OOP - Create your own object. Make at least two additional methods for it.
 
+class SmellIdentity:
+    def __init__(self, name, sweetness, bitterness, sourness, umami):
+        self.name = name
+        self.sweetness = sweetness
+        self.bitterness = bitterness
+        self.sourness = sourness
+        self.umami = umami
+    def It_smells(self):
+        input(f"Hey, put that {self.name} near my face so I can smell it ")
+    def What_smell_is(self):
+        if self.sweetness > 7:
+            a= f"{self.name} is very sweet "
+        if self.sweetness <= 7:
+            a=''
+        if self.bitterness > 7:
+            b= f"{self.name} is very bitter "
+        if self.bitterness <= 7:
+            b= ''
+        if self.sourness > 7:
+            c= f"{self.name} is very sour "
+        if self.sourness <= 7:
+            c=''
+        if self.umami > 7:
+            d= f"{self.name} is very Umami "
+        if self.umami <= 7:
+            d=''
+        return f'So, after testing this {self.name}, I think it has this flavor profile: {a}{b}{c}{d}'
+my_smellIdentity = SmellIdentity('muffin', 6, 8, 10, 6)
+my_smellIdentity.It_smells()
+print(my_smellIdentity.What_smell_is())
+
+
+
+
+
+
+
+
+
+
+
 
 
